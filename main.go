@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"image/color"
 	"log"
 
@@ -135,10 +134,6 @@ func (g *Game) Update() error {
 	g.player1.Update()
 	g.player2.Update()
 	g.ball.Update(&g.player1, &g.player2)
-	if ebiten.CurrentTPS() < 55 {
-		fmt.Println("TPS:", ebiten.CurrentTPS())
-		fmt.Println("FPS:", ebiten.CurrentFPS())
-	}
 	return nil
 }
 
