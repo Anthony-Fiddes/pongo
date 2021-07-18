@@ -1,4 +1,4 @@
-module pong
+module pongo
 
 go 1.16
 
